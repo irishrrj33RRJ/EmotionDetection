@@ -4,10 +4,10 @@ This project is an emotion detection application that uses the Watson NLP librar
 It analyzes text and returns detected emotions such as anger, disgust, fear, joy, and sadness.
 
 ## Project Structure
-- EmotionDetection/
--     test_emotion_detection.py
--     emotion_detection.py
--     server.py
--     README.md
--   templates/
--     index.html
+- emotion_detection/
+-   test_emotion_detection.py
+-   emotion_detection.py
+-   server.py
+-   README.md
+- templates/
+-   index.html
