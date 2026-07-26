@@ -5,7 +5,9 @@ It analyzes text and returns detected emotions such as anger, disgust, fear, joy
 
 ## Project Structure
 - EmotionDetection/
-- test_emotion_detection.py
-- emotion_detection.py
-- server.py
-- README.md
+-     test_emotion_detection.py
+-     emotion_detection.py
+-     server.py
+-     README.md
+-   templates/
+-     index.html
