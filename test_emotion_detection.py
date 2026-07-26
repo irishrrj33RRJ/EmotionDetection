@@ -1,5 +1,5 @@
-import unitest
-from EmotionDetection import emotion_detector
+import unittest
+from emotion_detection import emotion_detector
 
 class TestEmotionDetector(unittest.TestCase):
     
@@ -24,4 +24,4 @@ class TestEmotionDetector(unittest.TestCase):
         self.assertEqual(result["dominant_emotion"], "sadness")
 
 if __name__ == '__main__':
-    unitest.main()
+    unittest.main()
