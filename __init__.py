@@ -1,4 +1,4 @@
-"""Expose the emotion detector function at the package level."""
+""" Expose the emotion detector function at the package level. """
 
 from .emotion_detection import emotion_detector
 
