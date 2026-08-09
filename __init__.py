@@ -1,5 +1,3 @@
-""" Expose the emotion detector function at the package level. """
+""" Import the emotion detector function from the package. """
 
 from .emotion_detection import emotion_detector
-
-__all__ = ["emotion_detector"]
