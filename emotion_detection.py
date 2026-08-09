@@ -1,27 +1,27 @@
-""" Emotion detection utility for analyzing text input. """
+""" Uses the Watson Labs EmotionPredict for analyzing text. """
 
 import requests
 
-def emotion_detector(text_to_analyze):
-    """ Return emotion scores and the dominant emotion for input text. """
+def emotion_detector(analyze_Text):
+    """ Gives the emotional scores and the dominant emotion. """
     url = (
         "https://sn-watson-emotion.labs.skills.network/"
         "v1/watson.runtime.nlp.v1/NlpService/EmotionPredict"
     )
-
+    
     headers = {
         "grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"
     }
-
-    input_json = {
+    
+    jsonInput = {
         "raw_document": {
-            "text": text_to_analyze
+            "text": analyze_Text
         }
     }
-
+    
     response = requests.post(
         url,
-        json=input_json,
+        json=jsonInput,
         headers=headers,
         timeout=10
     )
