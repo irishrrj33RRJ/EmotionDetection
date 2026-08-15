@@ -13,7 +13,7 @@ def render_index_page():
 
 @app.route('/emotionDetector')
 def sent_detector():
-    """ Analyze user text and return formatted emotion results. """
+    """ Analyze user text and return formatted emotions. """
     text_to_analyze=request.args.get('textToAnalyze')
 
     if not text_to_analyze or not text_to_analyze.strip():
